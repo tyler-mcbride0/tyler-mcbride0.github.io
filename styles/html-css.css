@@ -1,0 +1,40 @@
+#border {
+  border: 15px;
+  border-color: #e4c482;
+  border-style: solid;
+}
+
+#padding {
+  padding: 20px;
+}
+
+.progress1 {
+  background-color: #b8c480;
+  border: 5px;
+  border-color: #e4c482;
+  border-style: solid;
+}
+
+#padding2 {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+}
+
+.fakemargin {
+  background-color: #b08354;
+  width: 558px;
+}
+
+#margin {
+  margin: 20px;
+}
+
+.progress2 {
+  background-color: #b8c480;
+  border: 5px;
+  border-color: #e4c482;
+  border-style: solid;
+  padding: 10px;
+}
