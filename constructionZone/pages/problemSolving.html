@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Problem Solving</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header">
+      <nav class="navbar">
+        <div class="container">
+          <a href="../index.html" class="navbar-blog">Tyler's Blog</a>
+          <div class="navbar-nav">
+            <a href="../index.html">home</a>
+            <a href="./core.html">core</a>
+            <a href="./tech.html">tech</a>
+            <a href="./aboutMe.html">about</a>
+          </div>
+        </div>
+      </nav>
+      <div class="banner">
+        <div class="container">
+          <h1 class="banner-title"><span>Tech.</span>Learning Blog</h1>
+          <p>Problem Solving</p>
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- post -->
+    <section class="post" id="post">
+      <div class="container">
+        <div class="title">
+          <h2>Problem Solving</h2>
+          <p>Technical Blog</p>
+        </div>
+        <div class="post-content">
+          <!-- item -->
+          <div class="post-item">
+            <div class="post-img">
+              <img id="post-img" src="../images/problemSolving.JPG" alt="" />
+            </div>
+            <div class="post-text">
+              <span>05 February 2024</span>
+
+              <h2>Rage moment on a simple problem:</h2>
+              <p>
+                During the JavaScript Kata’s I was trying to solve
+                super-fizzbuzz, I had solved FizzBuzz with confidence and was
+                feeling really good about my chances of solving the harder
+                version of it. I wrote out what I believed would be a solid
+                working solution but it did not work. I didn’t understand the
+                error message so I asked google and tried to do some research
+                and couldn’t find a good explanation for it. I checked my code
+                again but everything look right!
+                <br />
+                I got super frustrated and ended up walking away but I couldn’t
+                stop thinking about the problem, I spent a good amount of time
+                pacing and mumbling to myself about the issue. In the end I
+                asked my friend to look over my code and found out I had made a
+                very simple mistake. I had tried to access the array as if it
+                were an object. I made the change and voila! It worked!
+                <br />
+                I was elated that the problem was fixed, but I couldn’t help
+                feeling defeated that I had made such a simple error. When I
+                asked my friend how he figured it out so quickly he praised me
+                for reaching out for help and told me not to worry about it and
+                that everyone makes simple mistakes all the time, the trick is
+                to not give up and to make use what you have access to, like
+                coworkers and friends in the future.
+                <br />
+              </p>
+              <h2>Problem solving, the right way:</h2>
+              <p>
+                In my downtime lately I’ve been enjoying practising the kata’s
+                on
+                <a href="https://www.codewars.com/">Codewars.</a> Its been a lot
+                of fun and recently I tried a challenge that looked quite
+                complex and at first glance it had me stumped. The challenge was
+                based off the like system that facebook and other social media
+                sites use on posts, based on who liked the post and how many
+                people like it, it wanted to update the text to show who liked
+                the post.
+                <br />
+                To begin with I spent some time with my rubber duck and tried to
+                write some pseudocode and broke the problem down into parts. My
+                code needed to:
+                <br />
+                <span>
+                  <ol>
+                    <li>
+                      Count how many people like the post - (count the length of
+                      the array)
+                    </li>
+                    <li>
+                      Decide what to return depending on the length how many
+                      likes the post has - needs an if statement for multiple
+                      outputs
+                    </li>
+                  </ol>
+                </span>
+                <br />
+                Just these two steps gave me direction on what tools I needed. I
+                decided before I started coding to refresh my memory on if
+                statements and arrays so as to avoid starting it incorrectly.
+                <br />
+                I then just tried out my initial thoughts and found that no
+                matter how many names were in the array it was always producing
+                the final else in my if statement - “no one likes this post”. I
+                decided to comment out my original code and then break it down
+                and simplify it, making it so there was only two possibilities,
+                if there are names - return: “there are names” and else (when
+                the array is empty) - return “there is no names”. By doing this
+                I realised I had incorrectly used the equal to operator in my
+                code and I wasn’t doing it against the length of the array but
+                the array itself. I was then able to make the change in my
+                original code and test it out. Thankfully it worked this time
+                and I was really glad I kept a calm and focused approach to the
+                problem instead of yelling at my computer, its really important
+                to remember your code just does what you tell it to!
+              </p>
+              <h2>Reflections about problem solving skills:</h2>
+              <table>
+                <tr>
+                  <th>Technique</th>
+                  <th>Assessment</th>
+                </tr>
+                <tr>
+                  <td>Pseudocode</td>
+                  <td>
+                    Confident - I enjoy breaking down problems and writing a
+                    solution without technical terms.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Trying something</td>
+                  <td>
+                    Confident - Ideas are a great way to come up with new
+                    solutions and trying things you've done in the past to solve
+                    new problems can gives you a leg-up.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Rubber ducky method</td>
+                  <td>
+                    Confident - He's definitely earning his rent at the moment.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Reading error messages</td>
+                  <td>
+                    Not Confident - Sometimes they point to a place I don't
+                    expect them to and it confuses me. I also find it hard to
+                    pull them apart for what they are. I need a lot more
+                    practise with this.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Console.logging</td>
+                  <td>
+                    Neutral - I know how to use this but quite often skip over
+                    it as I haven't needed to put it into practise much.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Googling</td>
+                  <td>
+                    Confident - I have a keen interest in finding things out.
+                    Google is like a best friend.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Asking your peers for help</td>
+                  <td>
+                    Confident - I know when and how to ask for help, even when
+                    I'm reluctant to I'm aware enough of when I need to, I also
+                    know that asking for advice often makes you available to
+                    share advice as well.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Asking coaches for help</td>
+                  <td>
+                    Confident - I like to present potential solutions and ask
+                    for guidance rather than answers.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Improving your process with reflection</td>
+                  <td>
+                    Neutral - I often start very intentional and follow that
+                    path.
+                  </td>
+                </tr>
+              </table>
+              <h2>Why asking for help is important:</h2>
+              <p>
+                Quite often I find it difficult to ask for help, I like trying
+                to solve problems on my own and that opens me up to becoming
+                stressed and burnt out on problems I believe I should be able to
+                solve. When I was creating this website for the first time I
+                went through a vast range of emotions, small victories and
+                frustrations as well as a total rage moment followed by me
+                recentering myself and deciding it would be a good idea to start
+                fresh. I think it was the right idea in the end but meant I had
+                effectively cut my timeframe down due to the original plan being
+                scrapped. Luckily it wasn’t wasted time as it had the basics all
+                fresh in my mind and let move forward with a direct plan in
+                mind. However as I was drawing to an end I ran into some
+                problems with image placement. It got me fired up again and I
+                was ready to quit, luckily I got over myself and decided to
+                compromise. Instead of directly asking for a solution I asked
+                for a hint, it was the perfect help I needed and I was really
+                glad I reached out. I think this new perspective will be really
+                useful for future attempts.
+              </p>
+            </div>
+          </div>
+          <!-- end of item -->
+        </div>
+      </div>
+    </section>
+    <!-- end of post -->
+
+    <!-- footer -->
+    <footer>
+      <span>Tyler's Dev.Learning Blog Page</span>
+    </footer>
+    <!-- end of footer -->
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>
